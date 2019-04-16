@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".HeightSliderActivity">
+
+    <Button
+        android:id="@+id/weightSldierBtn"
+        android:layout_width="match_parent"
+        android:text="Weight Slider"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/heightSldierBtn"
+        android:layout_width="match_parent"
+        android:text="Height Slider"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

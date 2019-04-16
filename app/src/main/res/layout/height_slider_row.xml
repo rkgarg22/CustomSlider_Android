@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMenuRow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/nohighLightView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/valueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/highLightImageView"
+            android:layout_width="50dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cyanColorView"
+        android:layout_width="20dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:background="@color/cyan" />
+
+    <TextView
+        android:id="@+id/greyColorView"
+        android:layout_width="30dp"
+        android:layout_height="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        android:background="@android:color/darker_gray" />
+</RelativeLayout>

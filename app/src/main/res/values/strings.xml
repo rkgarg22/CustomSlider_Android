@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WeightDemo</string>
+    <string name ="weight_title">What\'s your weight?</string>
+    <string name="next_btn">NEXT</string>
+
+    <string name ="height_title">How tall are you?</string>
+    <string name="ft">ft</string>
+    <string name="inch">in</string>
+</resources>

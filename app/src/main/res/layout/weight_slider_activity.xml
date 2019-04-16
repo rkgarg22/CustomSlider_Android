@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeightSliderActivity">
+
+    <RelativeLayout
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/backButtonClick"
+            android:layout_width="40dp"
+            android:layout_centerVertical="true"
+            android:layout_height="40dp"
+            android:tint="@color/text_color"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/left_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/next_btn"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/cyan"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/titleView"
+        android:text="@string/weight_title"
+        android:textColor="@color/text_color"
+        android:textSize="20sp" />
+
+    <CustomControl.WithoutPaddingTextView
+        android:id="@+id/weightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:includeFontPadding="false"
+        android:text="4"
+        android:textColor="@color/text_color"
+        android:textSize="100sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/weightTextView"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/weightTextView"
+        android:text="lbs"
+        android:textColor="@color/cyan"
+        android:textSize="25sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/weightSlider"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/weightTextView"
+        android:layout_marginTop="50dp"
+        android:clipToPadding="false"
+        android:scrollbars="none" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/weightSlider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-15dp"
+        android:src="@drawable/triangle" />
+
+</RelativeLayout>
